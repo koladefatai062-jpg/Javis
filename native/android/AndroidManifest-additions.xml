@@ -1,0 +1,29 @@
+<!--
+  Add this <service> block inside the <application> tag of:
+  android/app/src/main/AndroidManifest.xml
+
+  (This is a snippet to merge in, not a standalone manifest — expo prebuild
+  generates the real one; you're adding to it.)
+-->
+
+<service
+    android:name="com.yourapp.jarvis.JarvisAccessibilityService"
+    android:exported="true"
+    android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+    <intent-filter>
+        <action android:name="android.accessibilityservice.AccessibilityService" />
+    </intent-filter>
+    <meta-data
+        android:name="android.accessibilityservice"
+        android:resource="@xml/accessibility_service_config" />
+</service>
+
+<!--
+  Also add the human-readable description referenced above to:
+  android/app/src/main/res/values/strings.xml
+
+  <string name="accessibility_service_description">
+    Lets Jarvis read on-screen text and tap/type on your behalf so it can
+    carry out voice commands like opening apps or sending messages.
+  </string>
+-->

@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Jarvis",
+    "slug": "jarvis-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.cyber.jarvis",
+      "permissions": [
+        "RECORD_AUDIO",
+        "BIND_ACCESSIBILITY_SERVICE"
+      ]
+    }
+  }
+}
