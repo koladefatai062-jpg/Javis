@@ -1,0 +1,17 @@
+<!--
+  native/android/accessibility_service_config.xml
+  Goes in: android/app/src/main/res/xml/accessibility_service_config.xml
+
+  This tells Android exactly what your service is allowed to see/do, and — 
+  crucially — the description text shown to the USER on the permission screen
+  before they approve it. Be honest here; Play Store review checks this
+  against actual behavior.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagRequestFilterKeyEvents"
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="100" />

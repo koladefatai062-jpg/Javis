@@ -11,6 +11,12 @@
         "RECORD_AUDIO",
         "BIND_ACCESSIBILITY_SERVICE"
       ]
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ad4882d3-9367-46aa-a5ef-8c57c1289eac"
+      }
+    },
+    "owner": "cyberdevpros-team"
   }
 }
